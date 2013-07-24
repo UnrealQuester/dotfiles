@@ -54,7 +54,7 @@ vmap <silent> <Leader>c :TComment<CR>
 nmap <silent> <Leader>tn :tabnew<CR>
 
 " Toggle TagList
-nmap <silent> <Leader>tl :TlistToggle<CR>
+nmap <silent> <Leader>tl :TagBarToggle<CR>
 
 " Open my vimrc
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
