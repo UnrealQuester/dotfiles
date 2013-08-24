@@ -53,8 +53,8 @@ vmap <silent> <Leader>c :TComment<CR>
 " Creates a new tab
 nmap <silent> <Leader>tn :tabnew<CR>
 
-" Toggle TagList
-nmap <silent> <Leader>tl :TagBarToggle<CR>
+" Toggle Tagbar
+nmap <silent> <Leader>tl :TagbarToggle<CR>
 
 " Open my vimrc
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
