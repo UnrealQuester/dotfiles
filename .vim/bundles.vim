@@ -31,4 +31,5 @@ Bundle 'xolox/vim-misc'
 Bundle 'Yggdroot/indentLine'
 " vim-script
 Bundle 'bufexplorer.zip'
+Bundle 'a.vim'
 Bundle 'L9'
