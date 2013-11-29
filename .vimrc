@@ -132,6 +132,8 @@ if has("autocmd")
                 \ if line("'\"") > 1 && line("'\"") <= line("$") |
                 \   exe "normal! g`\"" |
                 \ endif
+
+    autocmd Filetype cpp set syntax=cpp.doxygen
 endif
 
 
