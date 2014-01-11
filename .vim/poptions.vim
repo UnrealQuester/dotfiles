@@ -31,3 +31,6 @@ let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 let g:UltiSnipsUsePythonVersion = 2
+
+" airline
+let g:airline_powerline_fonts = 1
