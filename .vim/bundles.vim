@@ -8,6 +8,8 @@ Bundle 'gmarik/vundle'
 " My Bundles
 " github
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
+Bundle 'ivalkeen/vim-ctrlp-tjump'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'kana/vim-textobj-line'
