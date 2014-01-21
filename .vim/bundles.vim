@@ -7,8 +7,8 @@ Bundle 'gmarik/vundle'
 
 " My Bundles
 " github
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+" Bundle 'flazz/vim-colorschemes'
 Bundle 'ivalkeen/vim-ctrlp-tjump'
 Bundle 'justinmk/vim-sneak'
 Bundle 'kana/vim-textobj-entire'

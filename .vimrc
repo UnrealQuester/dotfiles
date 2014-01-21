@@ -98,15 +98,14 @@ set virtualedit=all
 set showtabline=2
 
 " Colorscheme
-let g:solarized_italic=0
-set background=dark
+" let g:solarized_italic=0
+" set background=dark
 colorscheme solarized
 
 " Font and encoding
-set guifont=Liberation\ Mono\ 10
-set guifontwide=Liberation\ Mono\ 10
-" set guifontwide=Inconsolata\ Medium:h9
-" set guifontwide=Inconsolata\ Medium:h9
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifontwide=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+let g:airline_powerline_fonts = 1
 set encoding=utf-8
 
 " Language
