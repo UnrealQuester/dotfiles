@@ -85,6 +85,8 @@ nmap <Leader>x <Plug>ToggleAutoCloseMappings
 cnoreabbrev <expr> h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab h' : 'h'
 cnoreabbrev <expr> help getcmdtype() == ":" && getcmdline() == 'help' ? 'tab help' : 'help'
 
+cmap w!! w !sudo tee %
+
 " Save with Ctrl+S
 noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
