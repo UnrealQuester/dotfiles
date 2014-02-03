@@ -73,6 +73,7 @@ set relativenumber
 set directory=/tmp
 " Backup
 set backupdir=~/.vim/backup
+set backup
 " Undo
 set undodir=~/.vim/undo
 set undofile
