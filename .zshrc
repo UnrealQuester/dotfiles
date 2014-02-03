@@ -13,7 +13,10 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 unsetopt beep
+
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
+eval `dircolors ~/dircolors/dircolors.ansi-light`
+
 autoload -U promptinit
 promptinit
 PROMPT="%n@%m %~ %% "
@@ -37,3 +40,4 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
+alias ls="ls --color=auto"
