@@ -15,6 +15,9 @@ bindkey -e
 unsetopt beep
 
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
+
 eval `dircolors ~/dircolors/dircolors.ansi-light`
 
 autoload -U promptinit
