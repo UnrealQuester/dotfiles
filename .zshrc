@@ -17,6 +17,8 @@ setopt AUTO_CD
 setopt HIST_IGNORE_DUPS
 
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.shell_prompt.sh
+
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
 
