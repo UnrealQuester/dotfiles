@@ -34,3 +34,20 @@ let g:UltiSnipsUsePythonVersion = 2
 
 " airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tmuxline#enabled = 0
+
+" promptline
+let g:promptline_preset = {
+        \'a': [ promptline#slices#user(), promptline#slices#host() ],
+        \'b' : [ '%~' ],
+        \'c' : [ '%#' ],
+        \'y' : [ promptline#slices#vcs_branch({ 'svn' : 1 }) ],
+        \'warn' : [ promptline#slices#last_exit_code() ]}
+
+" tmuxline
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W'],
+      \'y'    : ['%a', '%d.%m.%Y', '%R'],
+      \'z'    : '#H'}
