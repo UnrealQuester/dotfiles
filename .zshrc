@@ -14,6 +14,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 unsetopt BEEP
 setopt AUTO_CD
+setopt HIST_IGNORE_DUPS
 
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
