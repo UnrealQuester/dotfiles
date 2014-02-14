@@ -44,3 +44,4 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
 alias ls="ls --color=auto"
+alias :q="exit"
