@@ -79,7 +79,7 @@ nmap <silent> <Leader>tl :TagbarToggle<CR>
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 
 " Remap command window
-nnoremap q: :q
+map q: :q
 
 " As advised
 nmap <Leader>x <Plug>ToggleAutoCloseMappings
