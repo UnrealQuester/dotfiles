@@ -22,10 +22,6 @@ vnoremap <Leader>p "+p
 map zp 1z=
 
 " Fast window switching
-nnoremap <left> <C-W>h
-nnoremap <right> <C-W>l
-nnoremap <up> <C-W>k
-nnoremap <down> <C-W>j
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
