@@ -46,6 +46,8 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+bindkey '⇦' reverse-menu-complete
+
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
 alias ls="ls --color=auto"
 alias :q="exit"
