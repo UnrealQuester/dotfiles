@@ -116,6 +116,11 @@ set spelllang=
 "Disable the annoying bell
 set vb t_vb=
 
+if !has("gui_running")
+    set t_kB=⇦
+    set mouse=a
+endif
+
 " Statusline
 source ~/.vim/statusline.vim
 
