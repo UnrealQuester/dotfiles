@@ -15,6 +15,7 @@ bindkey -e
 unsetopt BEEP
 setopt AUTO_CD
 setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
 
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.shell_prompt.sh
