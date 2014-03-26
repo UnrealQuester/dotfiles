@@ -40,7 +40,7 @@ Bundle 'xolox/vim-shell'
 Bundle 'xolox/vim-misc'
 Bundle 'Yggdroot/indentLine'
 " vim-script
-Bundle 'bufexplorer.zip'
 Bundle 'a.vim'
+Bundle 'bufexplorer.zip'
 Bundle 'matchit.zip'
 Bundle 'L9'
