@@ -10,6 +10,9 @@ let NERDTreeDirArrows = 1
 " let g:SuperTabLongestEnhanced = 1
 " let g:SuperTabLongestHighlight = 1
 
+" argument textobj
+let g:argumentobject_mapping = 'f'
+
 " Author
 let g:ass_author = "Quester"
 let g:snips_author = "Quester"
