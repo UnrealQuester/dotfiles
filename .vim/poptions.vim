@@ -17,6 +17,9 @@ let g:argumentobject_mapping = 'f'
 let g:ass_author = "Quester"
 let g:snips_author = "Quester"
 
+" delimitMate
+let delimitMate_expand_cr = 1
+
 " Ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_extensions = ['line']
