@@ -18,9 +18,9 @@ setopt HIST_IGNORE_DUPS
 setopt SHARE_HISTORY
 
 
-source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
-source ~/.shell_prompt.sh
-source ~/dirhistory.zsh
+[[ -s ~/zsh-history-substring-search/zsh-history-substring-search.zsh ]] && source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
+[[ -s ~/.shell_prompt.sh ]] && source ~/.shell_prompt.sh
+[[ -s ~/dirhistory.zsh ]] && source ~/dirhistory.zsh
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
