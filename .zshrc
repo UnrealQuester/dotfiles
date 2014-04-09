@@ -19,6 +19,7 @@ setopt SHARE_HISTORY
 
 source ~/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.shell_prompt.sh
+source ~/dirhistory.zsh
 
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
