@@ -27,6 +27,8 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
 
 eval `dircolors ~/dircolors/dircolors.ansi-light`
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
 
 autoload -U promptinit
 promptinit
