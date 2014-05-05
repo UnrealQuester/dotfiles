@@ -81,9 +81,6 @@ nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 " Remap command window
 map q: :q
 
-" As advised
-nmap <Leader>x <Plug>ToggleAutoCloseMappings
-
 " Open the help in a new tab
 cnoreabbrev <expr> h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab h' : 'h'
 cnoreabbrev <expr> help getcmdtype() == ":" && getcmdline() == 'help' ? 'tab help' : 'help'
@@ -94,3 +91,8 @@ cmap w!! w !sudo tee %
 noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
+
+xmap if <Plug>(argtextobjI)
+xmap af <Plug>(argtextobjA)
+omap if <Plug>(argtextobjI)
+omap af <Plug>(argtextobjA)
