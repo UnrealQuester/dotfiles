@@ -1,5 +1,8 @@
 set nocompatible
 filetype off
+" new keybindings
+source ~/.vim/mappings.vim
+" plugins
 source ~/.vim/bundles.vim
 " Usefull stuff
 " The usual filetype plugins
@@ -126,9 +129,6 @@ source ~/.vim/statusline.vim
 
 " Plugin related stuff
 source ~/.vim/poptions.vim
-
-" new keybindings
-source ~/.vim/mappings.vim
 
 
 " autocommands
