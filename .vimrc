@@ -119,6 +119,9 @@ set spelllang=
 "Disable the annoying bell
 set vb t_vb=
 
+" diffopt
+set diffopt+=iwhite
+
 if !has("gui_running")
     set t_kB=⇦
     set mouse=a
