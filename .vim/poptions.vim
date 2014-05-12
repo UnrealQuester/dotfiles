@@ -43,6 +43,8 @@ let g:UltiSnipsUsePythonVersion = 2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 0
 
+let g:hardtime_default_on = 1
+
 " promptline
 " let g:promptline_preset = {
 "         \'a': [ promptline#slices#user(), promptline#slices#host() ],
