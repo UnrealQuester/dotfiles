@@ -136,12 +136,15 @@ source ~/.vim/poptions.vim
 
 " autocommands
 if has("autocmd")
-    autocmd BufReadPost *
-                \ if line("'\"") > 1 && line("'\"") <= line("$") |
-                \   exe "normal! g`\"" |
-                \ endif
+    augroup vimrc
+        autocmd!
+        autocmd BufReadPost *
+                    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+                    \   exe "normal! g`\"" |
+                    \ endif
 
-    autocmd Filetype cpp set syntax=cpp.doxygen
+        autocmd Filetype cpp set syntax=cpp.doxygen
+    augroup END
 endif
 
 
