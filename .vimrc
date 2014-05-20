@@ -67,6 +67,8 @@ set nobackup
 
 " Show relative line numbers
 set relativenumber
+" Also show current line number
+set number
 
 " Automatically apply substitution to the whole line
 " set gdefault
