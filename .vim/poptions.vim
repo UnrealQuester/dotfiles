@@ -20,6 +20,9 @@ let g:snips_author = "Quester"
 " delimitMate
 let delimitMate_expand_cr = 1
 
+" auto pairs
+let g:AutoPairsFlyMode = 1
+
 " Ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_extensions = ['line']
