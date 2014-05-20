@@ -23,6 +23,9 @@ let delimitMate_expand_cr = 1
 " auto pairs
 let g:AutoPairsFlyMode = 1
 
+" targets
+let g:targets_nlNL = '    '
+
 " Ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_extensions = ['line']
