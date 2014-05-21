@@ -96,3 +96,5 @@ xmap if <Plug>(argtextobjI)
 xmap af <Plug>(argtextobjA)
 omap if <Plug>(argtextobjI)
 omap af <Plug>(argtextobjA)
+
+let g:AutoPairsShortcutBackInsert = '<C-b>'
