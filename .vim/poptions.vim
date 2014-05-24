@@ -49,6 +49,9 @@ let g:UltiSnipsUsePythonVersion = 2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 0
 
+let g:easytags_include_members = 1
+let g:easytags_dynamic_files = 1
+
 let g:hardtime_default_on = 1
 
 " promptline
