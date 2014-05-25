@@ -62,6 +62,8 @@ set backup
 set undodir=~/.vim/undo
 set undofile
 set undolevels=1000
+" Tags
+set tags=./tags;
 
 " Reload files when changed on disk but not in vim
 set autoread
