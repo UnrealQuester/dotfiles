@@ -49,6 +49,8 @@ let g:UltiSnipsUsePythonVersion = 2
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 0
 
+" easytags
+let g:easytags_updatetime_warn = 0
 let g:easytags_include_members = 1
 let g:easytags_dynamic_files = 1
 
