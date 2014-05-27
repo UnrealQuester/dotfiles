@@ -1,24 +1,8 @@
-" NERDTree
-let NERDTreeDirArrows = 1
-
-" Autocomplpop
-" let g:acp_behaviorKeywordLength = 4
-" let g:acp_completeOption = '.,w,b,k,kspell'
-" let g:acp_completeoptPreview = 1
-
-" SuperTab
-" let g:SuperTabLongestEnhanced = 1
-" let g:SuperTabLongestHighlight = 1
-
 " argument textobj
 let g:argumentobject_mapping = 'f'
 
 " Author
-let g:ass_author = "Quester"
 let g:snips_author = "Quester"
-
-" delimitMate
-let delimitMate_expand_cr = 1
 
 " auto pairs
 let g:AutoPairsFlyMode = 1
@@ -31,7 +15,6 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_extensions = ['line']
 
 " Syntastic
-" let g:syntastic_python_checkers=['pylint', 'flake8']
 let g:syntastic_python_checkers=['flake8']
 
 " YouCompleteMe
