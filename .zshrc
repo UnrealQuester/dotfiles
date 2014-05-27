@@ -14,7 +14,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 unsetopt BEEP
 setopt AUTO_CD
-setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
 setopt SHARE_HISTORY
 
 
