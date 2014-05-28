@@ -35,10 +35,6 @@ nnoremap <leader><Right> "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><C-o>/\
 vnoremap < <gv
 vnoremap > >gv
 
-" Saves some time and is less annoying
-noremap <space> o<Esc>
-noremap <s-space> O<Esc>
-
 " Disables the hightlightsearch
 nmap <silent> <Leader>/ :nohlsearch<CR>
 
@@ -57,10 +53,6 @@ vnoremap <silent> # :<C-U>
   \gvy?<C-R><C-R>=substitute(
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
-
-" Tag jumping
-nnoremap <c-]> :CtrlPtjump<cr>
-vnoremap <c-]> :CtrlPtjumpVisual<cr>
 
 " Toggles NERDTree
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
