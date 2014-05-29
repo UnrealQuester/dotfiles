@@ -91,3 +91,4 @@ omap af <Plug>(argtextobjA)
 
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:targets_aiAI = 'a  i'
+let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
