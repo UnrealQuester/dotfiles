@@ -1,6 +1,3 @@
-" argument textobj
-let g:argumentobject_mapping = 'f'
-
 " Author
 let g:snips_author = "Quester"
 
