@@ -12,3 +12,5 @@ URxvt*termName: rxvt-unicode
 URxvt.urlLauncher: firefox
 URxvt.matcher.button: 1
 URxvt.keysym.0xfe20: ⇦
+URxvt.perl-ext-common: clipboard
+URxvt.keysym.C-Insert: perl:clipboard:paste
