@@ -87,8 +87,8 @@ set showtabline=2
 colorscheme solarized
 
 " Font and encoding
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-set guifontwide=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+set guifontwide=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 let g:airline_powerline_fonts = 1
 set encoding=utf-8
 
