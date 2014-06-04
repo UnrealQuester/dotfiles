@@ -55,6 +55,8 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 bindkey '⇦' reverse-menu-complete
+# fix del key
+bindkey '\e[3~' delete-char
 
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
 alias ls="ls --color=auto"
