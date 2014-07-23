@@ -55,3 +55,7 @@ omap af <Plug>(argtextobjA)
 
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
+
+" unite
+nnoremap <leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
+nnoremap <C-p> :Unite -buffer-name=files file_rec/async<CR>
