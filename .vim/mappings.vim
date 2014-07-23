@@ -38,6 +38,9 @@ vmap <silent> <Leader>c :TComment<CR>
 " Toggle Tagbar
 nmap <silent> <Leader>tl :TagbarToggle<CR>
 
+" Toggle Gundo
+nmap <silent> <Leader>tg :GundoToggle<CR>
+
 " Remap command window
 map q: :q
 
