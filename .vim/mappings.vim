@@ -38,6 +38,9 @@ vmap <silent> <Leader>c :TComment<CR>
 " Toggle Tagbar
 nmap <silent> <Leader>tl :TagbarToggle<CR>
 
+" Toggle Gundo
+nmap <silent> <Leader>tg :GundoToggle<CR>
+
 " Remap command window
 map q: :q
 
@@ -54,5 +57,8 @@ omap if <Plug>(argtextobjI)
 omap af <Plug>(argtextobjA)
 
 let g:AutoPairsShortcutBackInsert = '<C-b>'
-let g:targets_aiAI = 'a  i'
 let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
+
+" unite
+nnoremap <leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
+nnoremap <C-p> :Unite -buffer-name=files file_rec/async<CR>
