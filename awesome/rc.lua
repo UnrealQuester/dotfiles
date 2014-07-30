@@ -164,6 +164,12 @@ mpdwidget = lain.widgets.mpd({
         end
 
         widget:set_markup(markup("#EA6F81", artist) .. title)
+        mpd_notification_preset = {
+            title   = "Now playing",
+            timeout = 6,
+            text    = string.format("%s - %s\n%s", mpd_now.artist,
+            mpd_now.album, mpd_now.title)
+        }
     end
 })
 mpdwidgetbg = wibox.widget.background(mpdwidget, "#313131")
