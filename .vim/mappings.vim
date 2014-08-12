@@ -62,3 +62,9 @@ let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
 " unite
 nnoremap <leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
 nnoremap <C-p> :Unite -buffer-name=files file_rec/async<CR>
+
+nnoremap <silent> cp :set opfunc=ChangePaste<CR>g@
+function! ChangePaste(type, ...)
+    silent exe "normal! `[v`]\"_c"
+    silent exe "normal! p``"
+endfunction
