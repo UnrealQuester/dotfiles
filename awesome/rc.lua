@@ -90,7 +90,6 @@ end
 
 -- {{{ Menu
 local menubar = require("menubar")
-require("freedesktop/freedesktop")
 -- }}}
 
 -- {{{ Tags
@@ -356,12 +355,6 @@ globalkeys = awful.util.table.join(
 
     -- Menubar
     awful.key({ modkey,           }, "p", function() menubar.show() end),
-
-    -- Show Menu
-    awful.key({ modkey }, "w",
-        function ()
-            mymainmenu:show({ keygrabber = true })
-        end),
 
     -- Multimedia keys
     awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2+") end),
