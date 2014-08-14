@@ -10,7 +10,9 @@ let myPrint = putStrLn . HsColour.hscolour (HsColour.TTYg HsColour.XTerm256Compa
 
 :set -interactive-print=myPrint
 
-:def! search return . (":! hoogle "++)
-:def! doc return . (":! hoogle --info"++)
+let ghciEscapeShellArg arg = "'" ++ concatMap (\c -> if c == '\'' then "'\"'\"'" else [c]) arg ++ "'"
+
+:def! search return . (":! hoogle --color "++) . ghciEscapeShellArg
+:def! doc return . (":! hoogle --info"++) . ghciEscapeShellArg
 :set prompt "\ESC[34mλ\ESC[m> "
 :set +t
