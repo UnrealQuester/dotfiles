@@ -33,6 +33,8 @@ setopt dotglob
 
 
 autoload -U promptinit
+export PATH="/sbin:/usr/sbin:$PATH"
+
 promptinit
 PROMPT="%n@%m %~ %% "
 export TERM=xterm-256color
