@@ -33,6 +33,12 @@ nnoremap <C-H> <C-W><C-H>
 vnoremap < <gv
 vnoremap > >gv
 
+" Hit Enter to go to end of file.
+nnoremap <CR> G
+" Hit Backspace to go to beginning of file.
+nnoremap <BS> gg
+
+
 " Disables the hightlightsearch
 nmap <silent> <Leader>/ :nohlsearch<CR>
 
