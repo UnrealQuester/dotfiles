@@ -33,6 +33,9 @@ nnoremap <C-H> <C-W><C-H>
 vnoremap < <gv
 vnoremap > >gv
 
+" Reselect pasted text
+noremap gV `[v`]
+
 " Hit Enter to go to end of file.
 nnoremap <CR> G
 " Hit Backspace to go to beginning of file.
