@@ -7,6 +7,11 @@ set pastetoggle=<F2>
 " Might be nice if I could actually remember this mapping
 inoremap jj <Esc>
 
+" Jump tot he end of the pasted or yanked text
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+
 " Makes replacing/searching things easier
 nnoremap * *<c-o>
 
