@@ -108,7 +108,7 @@ clockicon = wibox.widget.imagebox(beautiful.widget_clock)
 mytextclock = awful.widget.textclock(" %a %d %b  %H:%M")
 
 -- calendar
-lain.widgets.calendar:attach(mytextclock, { font_size = 10 , font = "DejaVu Sans Mono"})
+lain.widgets.calendar:attach(mytextclock, { font_size = 10 , font = "DejaVu Sans Mono" , cal = "/usr/bin/ncal -bM"})
 
 -- MEM
 memicon = wibox.widget.imagebox(beautiful.widget_mem)
