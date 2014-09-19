@@ -14,8 +14,8 @@ let g:ctrlp_extensions = ['line']
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#set_profile('files', 'smartcase', 1)
 call unite#custom#profile('default', 'context', {'start_insert':1})
+call unite#custom#profile('files', 'context', {'smartcase':1})
 if executable('ag')
     let g:unite_source_grep_command='ag'
     let g:unite_source_grep_default_opts='--nocolor --line-numbers --nogroup -S'
