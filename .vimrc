@@ -133,6 +133,7 @@ if has("autocmd")
                     \ endif
 
         autocmd Filetype cpp set syntax=cpp.doxygen
+        autocmd Filetype ruby,puppet setlocal ts=2 sts=2 sw=2
     augroup END
 endif
 
