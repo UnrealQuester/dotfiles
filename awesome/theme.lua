@@ -77,7 +77,7 @@ theme.widget_mail                   = themes_dir .. "/icons/mail.png"
 theme.widget_mail_on                = themes_dir .. "/icons/mail_on.png"
 
 -- theme.lain_icons                    = os.getenv("HOME") .. "/.config/awesome/lain/icons/layout/zenburn/"
-theme.useless_gap_width             = 20
+theme.useless_gap_width             = 15
 -- theme.layout_termfair               = theme.lain_icons .. "termfair.png"
 -- theme.layout_cascade                = theme.lain_icons .. "cascade.png"
 -- theme.layout_cascadetile            = theme.lain_icons .. "cascadebrowse.png"
