@@ -37,6 +37,9 @@ let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 let g:UltiSnipsUsePythonVersion = 2
 
+" Incsearch
+let g:incsearch#auto_nohlsearch = 1
+
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 0

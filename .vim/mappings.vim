@@ -12,9 +12,6 @@ vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
 
-" Makes replacing/searching things easier
-nnoremap * *<c-o>
-
 " Copy to system clipboard
 noremap <Leader>y "+y
 vnoremap <Leader>y "+y
@@ -28,6 +25,14 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map * <Plug>(incsearch-nohl-g*)
+map # <Plug>(incsearch-nohl-g#)
 
 " Reselect visual block after indent/outdent
 vnoremap < <gv
