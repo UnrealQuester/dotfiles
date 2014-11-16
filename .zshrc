@@ -63,3 +63,4 @@ bindkey '\e[3~' delete-char
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
 alias ls="ls --color=auto"
 alias :q="exit"
+alias ...="cd ../.."
