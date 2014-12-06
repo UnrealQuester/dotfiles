@@ -5,7 +5,7 @@ let g:snips_author = "Quester"
 let g:AutoPairsFlyMode = 1
 
 " targets
-let g:targets_nlNL = '    '
+let g:targets_nlNL = 'nlN '
 
 " Ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
@@ -39,6 +39,9 @@ let g:UltiSnipsUsePythonVersion = 2
 
 " Incsearch
 let g:incsearch#auto_nohlsearch = 1
+
+" tcomment
+call tcomment#DefineType('cabal', '-- %s')
 
 " airline
 let g:airline_powerline_fonts = 1
