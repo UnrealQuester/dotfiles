@@ -49,7 +49,6 @@ function run_once(cmd)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
-run_once("urxvtd")
 run_once("compton --config ~/.compton.conf")
 -- }}}
 
@@ -60,7 +59,7 @@ run_once("compton --config ~/.compton.conf")
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvtc"
+terminal = "uxterm"
 editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 
