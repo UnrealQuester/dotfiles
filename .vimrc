@@ -84,6 +84,7 @@ set virtualedit=all
 set showtabline=2
 
 " Colorscheme
+set background=dark
 colorscheme solarized
 
 " Font and encoding
