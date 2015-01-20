@@ -1,5 +1,6 @@
 " Manage all of my plugins
 call plug#begin('~/.vim/plugged')
+Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'fanchangyong/a.vim'
