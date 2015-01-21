@@ -26,7 +26,7 @@ setopt SHARE_HISTORY
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
 
-eval `dircolors ~/dircolors/dircolors.ansi-light`
+eval `dircolors ~/dircolors/dircolors.ansi-dark`
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 _comp_options+=(globdots)
 setopt dotglob
