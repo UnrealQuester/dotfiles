@@ -103,7 +103,6 @@ set vb t_vb=
 set diffopt+=iwhite
 
 if !has("gui_running")
-    set t_kB=⇦
     set mouse=a
     set ttymouse=sgr
 endif
