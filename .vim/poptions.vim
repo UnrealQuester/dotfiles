@@ -16,6 +16,12 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#custom#profile('default', 'context', {'start_insert':1})
 call unite#custom#profile('files', 'context', {'smartcase':1})
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+  " Enable navigation with Tab and Shift-Tab in insert mode
+  imap <buffer> <Tab>   <Plug>(unite_select_next_line)
+  imap <buffer> <S-tab> <Plug>(unite_select_previous_line)
+endfunction
 if executable('ag')
     let g:unite_source_grep_command='ag'
     let g:unite_source_grep_default_opts='--nocolor --line-numbers --nogroup -S'
@@ -28,7 +34,7 @@ let g:syntastic_python_checkers=['flake8']
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_key_list_previous_completion = ['<S-Tab>', '⇦', '<Up>']
+let g:ycm_key_list_previous_completion = ['<S-Tab>', '<Up>']
 let g:ycm_confirm_extra_conf = 0
 
 " Ultisnips
