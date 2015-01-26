@@ -70,11 +70,6 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
-xmap if <Plug>(argtextobjI)
-xmap af <Plug>(argtextobjA)
-omap if <Plug>(argtextobjI)
-omap af <Plug>(argtextobjA)
-
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
 

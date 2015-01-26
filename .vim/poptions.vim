@@ -7,10 +7,6 @@ let g:AutoPairsFlyMode = 1
 " targets
 let g:targets_nlNL = 'nlN '
 
-" Ctrlp
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_extensions = ['line']
-
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
