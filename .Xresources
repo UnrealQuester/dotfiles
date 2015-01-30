@@ -70,3 +70,4 @@
 *color15:                 S_base3
 UXTerm*faceName: DejaVu Sans Mono for Powerline:pixelsize=12
 UXTerm*termName: xterm-256color
+UXTerm*metaSendsEscape: true
