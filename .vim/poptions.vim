@@ -52,7 +52,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 " easytags
 let g:easytags_updatetime_warn = 0
 let g:easytags_include_members = 1
-let g:easytags_dynamic_files = 2
+let g:easytags_dynamic_files = 1
 
 let g:easytags_languages = {
     \ 'javascript' : {
