@@ -71,3 +71,4 @@
 UXTerm*faceName: DejaVu Sans Mono for Powerline:pixelsize=11
 UXTerm*termName: xterm-256color
 UXTerm*metaSendsEscape: true
+UXTerm*bellIsUrgent: true
