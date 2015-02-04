@@ -1,0 +1,8 @@
+"1.1
+
+loadplugins '\.(js|penta)$'
+command! -bang feedly tabopen cloud.feedly.com
+set complete=search,location,file,bookmark
+set showstatuslinks=command
+
+" vim: set ft=pentadactyl:
