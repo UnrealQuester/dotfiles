@@ -6,7 +6,7 @@ let g:AutoPairsFlyMode = 1
 
 " targets
 let g:targets_nlNL = '    '
-let g:targets_aiAI = 'aI  '
+let g:targets_aiAI = 'a  i'
 
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
