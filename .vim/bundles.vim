@@ -19,7 +19,6 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'sjl/gundo.vim'
-Plug 'takac/vim-hardtime'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
