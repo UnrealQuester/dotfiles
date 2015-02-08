@@ -5,7 +5,8 @@ let g:snips_author = "Quester"
 let g:AutoPairsFlyMode = 1
 
 " targets
-let g:targets_nlNL = 'nlN '
+let g:targets_nlNL = '    '
+let g:targets_aiAI = 'aI  '
 
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
