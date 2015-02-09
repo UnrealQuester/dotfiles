@@ -105,6 +105,8 @@ set diffopt+=iwhite
 if !has("gui_running")
     set mouse=a
     set ttymouse=sgr
+else
+    set guicursor=a:blinkon0
 endif
 
 " Statusline
