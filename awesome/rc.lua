@@ -340,6 +340,10 @@ globalkeys = awful.util.table.join(
             end
         end),
 
+    -- Screen navigation
+    awful.key({modkey,            }, "F1",     function () awful.screen.focus(1) end),
+    awful.key({modkey,            }, "F2",     function () awful.screen.focus(2) end),
+
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey,           }, "s", function () awful.util.spawn("i3lock -i " .. os.getenv("HOME") .. "/wallpapers/wallpaper.png -t") end),
