@@ -50,6 +50,7 @@ function run_once(cmd)
 end
 
 run_once("compton --config ~/.compton.conf")
+run_once("redshift-gtk")
 -- }}}
 
 -- }}}
