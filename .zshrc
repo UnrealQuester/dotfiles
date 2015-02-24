@@ -33,7 +33,7 @@ setopt dotglob
 
 
 autoload -U promptinit
-export PATH="/sbin:/usr/sbin:$PATH"
+export PATH="`ruby -e 'print Gem.user_dir'`/bin:/sbin:/usr/sbin:$PATH"
 
 promptinit
 PROMPT="%n@%m %~ %% "
