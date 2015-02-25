@@ -327,10 +327,38 @@ globalkeys = awful.util.table.join(
         function()
             awful.client.swap.bydirection("right")
         end),
-    awful.key({ modkey, "Control" }, "l", function () awful.tag.incmwfact( 0.02)     end),
-    awful.key({ modkey, "Control" }, "h", function () awful.tag.incmwfact( -0.02)     end),
-    awful.key({ modkey, "Control" }, "j", function () awful.tag.incmwfact( 0.02)     end),
-    awful.key({ modkey, "Control" }, "k", function () awful.tag.incmwfact( -0.02)     end),
+    awful.key({ modkey, "Control" }, "l", function ()
+        if awful.client.getmaster() == client.focus then
+            awful.tag.incmwfact(0.02)
+        else
+            awful.client.incwfact(0.02)
+        end
+    end),
+    awful.key({ modkey, "Control" }, "h", function ()
+        if awful.client.getmaster() == client.focus then
+            awful.tag.incmwfact(-0.02)
+        else
+            awful.client.incwfact(-0.02)
+        end
+    end),
+    awful.key({ modkey, "Control" }, "k", function ()
+        if awful.client.getmaster() == client.focus then
+            awful.tag.incmwfact(0.02)
+        else
+            awful.client.incwfact(0.02)
+        end
+    end),
+    awful.key({ modkey, "Control" }, "j", function ()
+        if awful.client.getmaster() == client.focus then
+            awful.tag.incmwfact(-0.02)
+        else
+            awful.client.incwfact(-0.02)
+        end
+    end),
+    awful.key({ modkey,           }, "q", function () awful.tag.incncol(-1) end),
+    awful.key({ modkey,           }, "e", function () awful.tag.incncol( 1) end),
+    awful.key({ modkey, "Control" }, "q", function () awful.tag.incnmaster(-1) end),
+    awful.key({ modkey, "Control" }, "e", function () awful.tag.incnmaster( 1) end),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
     awful.key({ modkey,           }, "Tab",
         function ()
