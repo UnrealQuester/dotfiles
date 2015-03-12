@@ -479,6 +479,8 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     { rule = { class = "Plugin-container" },
+      properties = { floating = true, border_width = 0, fullscreen = true } },
+    { rule = { class = "Keepassx" },
       properties = { floating = true, border_width = 0 } },
     { rule = { class = "plugin-container" },
       properties = { floating = true, border_width = 0 } },
