@@ -25,6 +25,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+if has('nvim')
+    tnoremap <C-J> <C-\><C-n>:TmuxNavigateDown
+    tnoremap <C-K> <C-\><C-n>:TmuxNavigateUp
+    tnoremap <C-L> <C-\><C-n>:TmuxNavigateRight
+    tnoremap <C-H> <C-\><C-n>:TmuxNavigateLeft
+endif
 
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
