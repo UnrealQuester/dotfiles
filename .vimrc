@@ -86,6 +86,8 @@ set showtabline=2
 " Colorscheme
 set background=dark
 colorscheme solarized
+hi Variable ctermfg=13
+hi Member ctermfg=45
 
 " Font and encoding
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9

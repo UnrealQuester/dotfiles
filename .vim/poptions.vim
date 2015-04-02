@@ -52,6 +52,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 " easytags
 let g:easytags_updatetime_warn = 0
 let g:easytags_dynamic_files = 1
+:autocmd FileType cpp,c let b:easytags_auto_highlight = 0
 
 let g:easytags_languages = {
     \ 'javascript' : {
