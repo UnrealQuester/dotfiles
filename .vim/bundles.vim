@@ -6,7 +6,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'fanchangyong/a.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
-Plug 'jeaye/color_coded'
+Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
