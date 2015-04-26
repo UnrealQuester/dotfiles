@@ -36,6 +36,9 @@ set smarttab
 " Allows to backspace over indents, end/start of the line
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
+" Only search the first and last line for mode
+set modelines=1
+
 " List mode
 set list
 set listchars=tab:>-,trail:-
