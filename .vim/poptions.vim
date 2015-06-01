@@ -2,7 +2,7 @@
 let g:snips_author = "Quester"
 
 " auto pairs
-let g:AutoPairsFlyMode = 1
+" let g:AutoPairsFlyMode = 1
 
 " targets
 let g:targets_nlNL = '    '
