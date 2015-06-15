@@ -1,6 +1,9 @@
 " Author
 let g:snips_author = "Quester"
 
+" haskell-vim
+let g:haskell_indent_if = 0
+
 " auto pairs
 " let g:AutoPairsFlyMode = 1
 

@@ -15,6 +15,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'majutsushi/tagbar'
 Plug 'marijnh/tern_for_vim'
 Plug 'PeterRincker/vim-argumentative'
+Plug 'raichoo/haskell-vim'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc', { 'do': 'make' }
