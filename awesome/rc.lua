@@ -378,15 +378,13 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
-    awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
-    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
-
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
     awful.key({ modkey,        }, "d", function() drop(terminal) end),
 
     -- Menubar
     awful.key({ modkey,           }, "p", function() menubar.show() end),
+    awful.key({ modkey,           }, "space", function () awful.util.spawn("dmenuwrapper") end),
 
     -- Multimedia keys
     awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2+") end),
