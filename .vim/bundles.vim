@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
+Plug 'chase/vim-ansible-yaml'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'fanchangyong/a.vim'
 Plug 'haya14busa/incsearch.vim'
