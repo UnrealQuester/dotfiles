@@ -63,6 +63,7 @@ bindkey '\e[3~' delete-char
 alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc -silent"
 alias ls="ls --color=auto"
 alias :q="exit"
+alias :e="vim"
 alias emerge="sudo emerge"
 alias irssi="TERM=screen-256color irssi"
 alias ranger="TERM=screen-256color ranger"
