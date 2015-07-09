@@ -30,3 +30,6 @@ super + shift + q
 
 super + {_, shift +} Tab
     bspc window -f {prev,next}
+
+super + f
+    bspc window -t fullscreen
