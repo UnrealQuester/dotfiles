@@ -22,6 +22,7 @@ setopt SHARE_HISTORY
 [[ -s ~/.shell_prompt.sh ]] && source ~/.shell_prompt.sh
 [[ -s ~/dirhistory.zsh ]] && source ~/dirhistory.zsh
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+[[ -s ~/zbell.sh ]] && source ~/zbell.sh
 
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
