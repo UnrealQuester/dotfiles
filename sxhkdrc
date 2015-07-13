@@ -33,3 +33,6 @@ super + {_, shift +} Tab
 
 super + f
     bspc window -t fullscreen
+
+super + Print
+    gnome-screenshot --interactive
