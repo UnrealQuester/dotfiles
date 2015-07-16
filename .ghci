@@ -1,3 +1,4 @@
+:set -fobject-code
 import qualified IPPrint
 import qualified Language.Haskell.HsColour as HsColour
 import qualified Language.Haskell.HsColour.Colourise as HsColour
