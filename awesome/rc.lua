@@ -88,10 +88,6 @@ if beautiful.wallpaper then
 end
 -- }}}
 
--- {{{ Menu
-local menubar = require("menubar")
--- }}}
-
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {}
@@ -382,8 +378,6 @@ globalkeys = awful.util.table.join(
 
     awful.key({ modkey,        }, "d", function() drop(terminal) end),
 
-    -- Menubar
-    awful.key({ modkey,           }, "p", function() menubar.show() end),
     awful.key({ modkey,           }, "space", function () awful.util.spawn("dmenuwrapper") end),
 
     -- Multimedia keys
