@@ -34,7 +34,7 @@ setopt dotglob
 
 
 autoload -U promptinit
-export PATH="`ruby -e 'print Gem.user_dir'`/bin:/sbin:/usr/sbin:$PATH"
+export PATH="`ruby -e 'print Gem.user_dir'`/bin:/sbin:/usr/sbin:$HOME/.local/bin:$PATH"
 
 promptinit
 PROMPT="%n@%m %~ %% "
@@ -71,3 +71,4 @@ alias ranger="TERM=screen-256color ranger"
 alias htop="TERM=screen-256color htop"
 alias ...="cd ../.."
 alias vimsplit="vim -O"
+alias esync="sudo eix-sync"
