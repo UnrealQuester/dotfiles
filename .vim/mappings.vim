@@ -1,5 +1,5 @@
 " Let's be honest here, who doesn't do this?
-let mapleader=","
+let mapleader=" "
 
 " Toggle paste mode
 set pastetoggle=<F2>
