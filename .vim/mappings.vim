@@ -82,10 +82,14 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
 
 " unite
-nnoremap <leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
-nnoremap <C-p> :Unite -buffer-name=files file_rec/async<CR>
-nmap <silent> <Leader>tt :Unite -buffer-name=tag tag<CR>
-nmap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
+nnoremap <Leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
+nnoremap <Leader>f :Unite -buffer-name=files file_rec/async<CR>
+nnoremap <silent> <Leader>tt :Unite -buffer-name=tag tag<CR>
+nnoremap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
+
+nnoremap <silent> <Leader>gc :Gcommit -v<CR>
+nnoremap <silent> <Leader>gs :Unite giti/status<CR>
+nnoremap <silent> <Leader>gd :Gdiff<CR>
 
 nnoremap <silent> cp :set opfunc=ChangePaste<CR>g@
 function! ChangePaste(type, ...)
