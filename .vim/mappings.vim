@@ -82,14 +82,32 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
 
 " unite
-nnoremap <Leader>g :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
-nnoremap <Leader>f :Unite -buffer-name=files file_rec/async<CR>
+nnoremap <silent> <Leader>ag :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
+nnoremap <silent> <Leader>f :Unite -buffer-name=files file_rec/async<CR>
 nnoremap <silent> <Leader>tt :Unite -buffer-name=tag tag<CR>
 nnoremap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
 
-nnoremap <silent> <Leader>gc :Gcommit -v<CR>
-nnoremap <silent> <Leader>gs :Unite giti/status<CR>
+nnoremap <silent> <Leader>gs :Unite giti/status -no-start-insert<CR>
+
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+  " Enable navigation with Tab and Shift-Tab in insert mode
+  imap <buffer> <Tab>   <Plug>(unite_select_next_line)
+  imap <buffer> <S-tab> <Plug>(unite_select_previous_line)
+  for source in unite#get_current_unite().sources
+      if source.name == 'giti/status'
+          nnoremap <silent><buffer><expr>ga unite#do_action('stage')
+          nnoremap <silent><buffer><expr>gp unite#do_action('add_patch')
+          nnoremap <silent><buffer><expr>gc unite#do_action('checkout')
+          nnoremap <silent><buffer><expr>gd unite#do_action('diff')
+          nnoremap <silent><buffer><expr>gu unite#do_action('unstage')
+      endif
+  endfor
+endfunction
+
 nnoremap <silent> <Leader>gd :Gdiff<CR>
+nnoremap <silent> <Leader>gc :Gcommit -v<CR>
+nnoremap <silent> <Leader>ga :Gcommit -v --amend<CR>
 
 nnoremap <silent> cp :set opfunc=ChangePaste<CR>g@
 function! ChangePaste(type, ...)
