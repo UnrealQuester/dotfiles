@@ -68,9 +68,6 @@ nmap <silent> <Leader>tl :TagbarToggle<CR>
 " Toggle Gundo
 nmap <silent> <Leader>tg :GundoToggle<CR>
 
-" Remap command window
-map q: :q
-
 cmap w!! w !sudo tee %
 
 " Save with Ctrl+S
