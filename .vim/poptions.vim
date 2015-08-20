@@ -22,6 +22,8 @@ if executable('ag')
     let g:unite_source_grep_recursive_opt=''
     let g:unite_source_rec_async_command= 'ag --nocolor --nogroup --hidden -g ""'
 endif
+let g:unite_source_tag_max_fname_length = 70
+let g:unite_source_tag_max_name_length = 70
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
