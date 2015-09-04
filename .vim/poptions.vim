@@ -18,7 +18,7 @@ call unite#custom#profile('default', 'context', {'start_insert':1})
 call unite#custom#profile('files', 'context', {'smartcase':1})
 if executable('ag')
     let g:unite_source_grep_command='ag'
-    let g:unite_source_grep_default_opts='--nocolor --line-numbers --nogroup -S'
+    let g:unite_source_grep_default_opts='--nocolor --line-numbers --nogroup --vimgrep -S'
     let g:unite_source_grep_recursive_opt=''
     let g:unite_source_rec_async_command= ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
 endif
