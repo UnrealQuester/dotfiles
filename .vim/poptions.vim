@@ -13,7 +13,7 @@ let g:targets_aiAI = 'a  i'
 
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#filters#sorter_default#use(['sorter_selecta'])
 call unite#custom#profile('default', 'context', {'start_insert':1})
 call unite#custom#profile('files', 'context', {'smartcase':1})
 if executable('ag')
