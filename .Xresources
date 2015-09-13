@@ -72,3 +72,5 @@ UXTerm*faceName: DejaVu Sans Mono for Powerline:pixelsize=11:antialias=true:auto
 UXTerm*termName: xterm-256color
 UXTerm*metaSendsEscape: true
 UXTerm*bellIsUrgent: true
+UXTerm.*backarrowKey: false
+*ttyModes: erase ^?
