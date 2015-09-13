@@ -68,7 +68,7 @@
 *color13:                 S_violet
 *color14:                 S_base1
 *color15:                 S_base3
-UXTerm*faceName: DejaVu Sans Mono for Powerline:pixelsize=11
+UXTerm*faceName: DejaVu Sans Mono for Powerline:pixelsize=11:antialias=true:autohint=true
 UXTerm*termName: xterm-256color
 UXTerm*metaSendsEscape: true
 UXTerm*bellIsUrgent: true
