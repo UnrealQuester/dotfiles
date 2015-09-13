@@ -19,7 +19,7 @@ Plug 'kmnk/vim-unite-giti'
 Plug 'majutsushi/tagbar'
 Plug 'marijnh/tern_for_vim'
 Plug 'PeterRincker/vim-argumentative'
-Plug 'raichoo/haskell-vim'
+Plug 'UnrealQuester/haskell-indent'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc', { 'do': 'make' }
