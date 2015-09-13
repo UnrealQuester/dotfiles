@@ -6,6 +6,7 @@ let g:haskell_indent_if = 0
 
 " auto pairs
 " let g:AutoPairsFlyMode = 1
+let g:AutoPairsShortcutBackInsert = ''
 
 " targets
 let g:targets_nlNL = '    '
@@ -28,10 +29,17 @@ let g:unite_source_tag_max_name_length = 70
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
 
+" neco-ghc
+let g:haskellmode_completion_ghc = 0
+let g:necoghc_enable_detailed_browse = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_key_list_previous_completion = ['<S-Tab>']
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:ycm_key_invoke_completion = '<C-b>'
 
 " Ultisnips
 let g:UltiSnipsExpandTrigger = "<c-j>"
