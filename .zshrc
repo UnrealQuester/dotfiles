@@ -59,7 +59,7 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-bindkey '⇦' reverse-menu-complete
+bindkey '^[[Z' reverse-menu-complete
 # fix del key
 bindkey '\e[3~' delete-char
 
