@@ -22,6 +22,15 @@ super + ctrl + {1-9}
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,window -d} ^{1-9,10}
 
+super + q
+    bspc desktop -f ^4
+
+super + w
+    bspc desktop -f ^5
+
+super + e
+    bspc desktop -f ^6
+
 super + s
     i3lock -i ~/wallpapers/wallpaper.png -t
 
