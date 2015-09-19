@@ -7,6 +7,9 @@ autoload -Uz compinit
 autoload -Uz bashcompinit
 compinit
 bashcompinit
+if type stack > /dev/null; then
+    eval "$(stack --bash-completion-script "$(which stack)")"
+fi
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
