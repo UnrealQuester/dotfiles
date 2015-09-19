@@ -1,0 +1,30 @@
+#! /bin/bash
+
+compton --config ~/.compton.conf -b
+feh --bg-scale ~/wallpapers/wallpaper.png
+bspc config border_width 0
+bspc config window_gap 10
+bspc monitor DFP9  -d terminal files games
+bspc monitor DFP10 -d www mail misc
+
+bspc desktop games -t floating=on
+bspc rule -a keepassx floating=on
+
+bspc rule -a xterm desktop=terminal
+bspc rule -a Firefox desktop=www
+bspc rule -a Thunderbird desktop=mail
+bspc rule -a Nemo desktop=files
+# Steam crashed on bspwm when switching desktops
+bspc rule -a Steam floating=on
+dunst -geometry "0x10-0+$PANEL_HEIGHT" &
+
+cd /home/avbudden/.config/bspwm
+./panel &
+redshift-gtk &
+
+cd ~
+
+uxterm tmux &
+firefox-bin &
+thunderbird-bin &
+sleep 5 && nemo &> /dev/null &
