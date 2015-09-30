@@ -13,6 +13,10 @@ super + @button{1-3}
 super + shift + r
     pkill -USR1 -x sxhkd
 
+# close window
+super + c
+    bspc window -c
+
 super + space
     dmenuwrapper
 
