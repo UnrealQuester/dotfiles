@@ -32,11 +32,20 @@ super + {_,shift + }{q,w,e}
 super + s
     i3lock -i ~/wallpapers/wallpaper.png -t
 
-super + shift + q
+super + shift + x
     bspc quit
 
 super + {_, shift +} Tab
     bspc window -f {prev,next}
+
+super + {_,shift + }{h,j,k,l}
+    bspc window -{f,s} {left,down,up,right}
+
+super + ctrl + {h,j,k,l}
+    bspc window -p {left,down,up,right}
+
+super + r
+    bspc desktop --rotate 90
 
 super + f
     bspc window -t fullscreen
