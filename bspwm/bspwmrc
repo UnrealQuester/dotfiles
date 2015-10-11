@@ -12,6 +12,7 @@ bspc rule -a keepassx floating=on
 
 bspc rule -a xterm desktop=terminal
 bspc rule -a Firefox desktop=www
+bspc rule -a Google-chrome-stable desktop=www
 bspc rule -a Thunderbird desktop=mail
 bspc rule -a Nemo desktop=files
 # Steam crashed on bspwm when switching desktops
@@ -25,6 +26,6 @@ redshift-gtk &
 cd ~
 
 uxterm tmux &
-firefox-bin &
+google-chrome-stable &
 thunderbird-bin &
 sleep 5 && nemo &> /dev/null &
