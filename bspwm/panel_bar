@@ -57,7 +57,7 @@ while read -r line ; do
         num_win=`echo "$windows"|wc -l`
         for window in $windows ; do
             window_name=`xtitle -t $((50 / $num_win)) "$window"`
-            if [ $window = $active_win ]; then
+            if [ "$window" = "$active_win" ]; then
                 output="${output}%{A:bspc window -f ${window}:}%{U$COLOR_UNDERLINE}%{+u} ${window_name} %{-u}%{U-}%{A}"
             else
                 output="${output}%{A:bspc window -f ${window}:} ${window_name} %{A}"
