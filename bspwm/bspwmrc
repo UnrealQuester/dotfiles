@@ -10,6 +10,7 @@ bspc monitor DFP10 -d www mail misc
 bspc desktop games -t floating=on
 bspc rule -a keepassx floating=on
 bspc rule -a keepass2 floating=on
+bspc rule -a Steam floating=on
 
 bspc rule -a xterm desktop=terminal
 bspc rule -a Firefox desktop=www
@@ -17,8 +18,8 @@ bspc rule -a Iceweasel desktop=www
 bspc rule -a Google-chrome-stable desktop=www
 bspc rule -a Thunderbird desktop=mail
 bspc rule -a Nemo desktop=files
-# Steam crashed on bspwm when switching desktops
-bspc rule -a Steam floating=on
+bspc rule -a Steam desktop=games
+
 dunst -geometry "0x10-0+$PANEL_HEIGHT" &
 
 cd /home/avbudden/.config/bspwm
