@@ -58,10 +58,6 @@ nnoremap <BS> gg
 " Disables the hightlightsearch
 nmap <silent> <Leader>/ :nohlsearch<CR>
 
-" Toggles comments
-nmap <silent> <Leader>c :TComment<CR>
-vmap <silent> <Leader>c :TComment<CR>
-
 " Toggle Tagbar
 nmap <silent> <Leader>tl :TagbarToggle<CR>
 

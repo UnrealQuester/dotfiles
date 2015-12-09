@@ -14,6 +14,8 @@ let g:tex_conceal = ""
 let g:targets_nlNL = '    '
 let g:targets_aiAI = 'a  i'
 
+let g:tcommentMapLeaderOp1 = '<Leader>c'
+
 " Unite
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_selecta'])
