@@ -107,7 +107,7 @@ set vb t_vb=
 " diffopt ignore whitespace
 set diffopt+=iwhite
 
-if !has("gui_running")
+if !has("gui_running") && !has('nvim')
     set mouse=a
     set ttymouse=sgr
 else
