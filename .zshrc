@@ -45,6 +45,8 @@ promptinit
 PROMPT="%n@%m %~ %% "
 export TERM=xterm-256color
 
+eval "$(thefuck --alias fix)"
+
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
