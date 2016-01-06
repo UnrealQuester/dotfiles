@@ -53,6 +53,8 @@ nnoremap <CR> G
 " Hit Backspace to go to beginning of file.
 nnoremap <BS> gg
 
+" surround alias
+nmap <Leader>s ys
 
 " Disables the hightlightsearch
 nmap <silent> <Leader>/ :nohlsearch<CR>
