@@ -7,10 +7,10 @@ bspc config window_gap 10
 bspc monitor DFP9  -d terminal files games
 bspc monitor DFP10 -d www mail misc
 
-bspc desktop games -t floating=on
-bspc rule -a keepassx floating=on
-bspc rule -a keepass2 floating=on
-bspc rule -a Steam floating=on
+bspc desktop games -t state=floating
+bspc rule -a keepassx state=floating
+bspc rule -a KeePass2 state=floating
+bspc rule -a Steam state=floating
 
 bspc rule -a xterm desktop=terminal
 bspc rule -a Firefox desktop=www
