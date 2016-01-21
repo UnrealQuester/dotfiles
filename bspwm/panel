@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 PANEL_FIFO="/tmp/panel_fifo"
 PANEL_FIFO2="/tmp/panel_fifo2"
