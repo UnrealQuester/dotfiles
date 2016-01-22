@@ -22,7 +22,7 @@ bspc rule -a Steam desktop=games
 
 dunst -geometry "0x10-0+$PANEL_HEIGHT" &
 
-cd /home/avbudden/.config/bspwm
+cd ~/.config/bspwm
 ./panel &
 redshift-gtk &
 
