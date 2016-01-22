@@ -12,7 +12,7 @@ bspc rule -a keepassx state=floating
 bspc rule -a KeePass2 state=floating
 bspc rule -a Steam state=floating
 
-bspc rule -a xterm desktop=terminal
+bspc rule -a UXTerm desktop=terminal
 bspc rule -a Firefox desktop=www
 bspc rule -a Iceweasel desktop=www
 bspc rule -a Google-chrome-stable desktop=www
