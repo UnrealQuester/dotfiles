@@ -38,4 +38,16 @@ cat "$PANEL_FIFO2"                                                              
 | ./panel_bar DFP9                                                                       \
 | lemonbar -g 1900x$PANEL_HEIGHT+1930+7 -u 2 -f "$FONT_FAMILY" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" \
 | while read line; do eval "$line"; done &
+
+wid=$(xdo id -a "bar")
+tries_left=20
+while [ -z "$wid" -a "$tries_left" -gt 0  ] ; do
+    sleep 0.05
+    wid=$(xdo id -a "bar")
+    tries_left=$((tries_left - 1))
+done
+[ -n "$wid"  ] && for window in $wid ; do
+    xdo above -t "$(xdo id -N Bspwm -n root | sort | head -n 1)" "$window"
+done
+
 wait
