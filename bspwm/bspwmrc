@@ -16,6 +16,7 @@ bspc rule -a UXTerm desktop=terminal
 bspc rule -a Firefox desktop=www
 bspc rule -a Iceweasel desktop=www
 bspc rule -a Google-chrome-stable desktop=www
+bspc rule -a google-chrome desktop=www
 bspc rule -a Thunderbird desktop=mail
 bspc rule -a Nemo desktop=files
 bspc rule -a Steam desktop=games
