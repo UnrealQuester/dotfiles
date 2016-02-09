@@ -1,7 +1,6 @@
 " Manage all of my plugins
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
 Plug 'chase/vim-ansible-yaml'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'fanchangyong/a.vim'
@@ -30,6 +29,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tsukkee/unite-tag'
 Plug 'Valloric/YouCompleteMe'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-shell'
 Plug 'xolox/vim-misc'
