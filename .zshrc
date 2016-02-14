@@ -43,7 +43,6 @@ export PATH="`ruby -e 'print Gem.user_dir'`/bin:/sbin:/usr/sbin:$HOME/.local/bin
 
 promptinit
 PROMPT="%n@%m %~ %% "
-export TERM=xterm-256color
 
 eval "$(thefuck --alias fix)"
 
