@@ -26,6 +26,7 @@ if executable('ag')
     let g:unite_source_grep_default_opts='--nocolor --line-numbers --nogroup --vimgrep -S'
     let g:unite_source_grep_recursive_opt=''
     let g:unite_source_rec_async_command= ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
+    call unite#custom#source('grep', 'max_candidates', 1000)
 endif
 let g:unite_source_tag_max_fname_length = 70
 let g:unite_source_tag_max_name_length = 70
