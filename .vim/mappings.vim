@@ -65,7 +65,7 @@ nmap <silent> <Leader>tl :TagbarToggle<CR>
 " Toggle Gundo
 nmap <silent> <Leader>tg :GundoToggle<CR>
 
-cmap w!! w !sudo tee %
+cmap w!! w !sudo tee > /dev/null %
 
 " Save with Ctrl+S
 noremap <C-S> :update<CR>
