@@ -43,6 +43,9 @@ set modelines=1
 set list
 set listchars=tab:>-,trail:-
 
+" highlight column 80
+set colorcolumn=80
+
 " Show the command line
 set showcmd
 
