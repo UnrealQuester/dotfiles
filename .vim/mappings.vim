@@ -41,6 +41,8 @@ map # <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
+nmap ]s <Plug>(altr-forward)
+nmap [s <Plug>(altr-back)
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv

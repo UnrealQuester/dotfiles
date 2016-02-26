@@ -3,11 +3,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'chase/vim-ansible-yaml'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'fanchangyong/a.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
 Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'kana/vim-altr'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
