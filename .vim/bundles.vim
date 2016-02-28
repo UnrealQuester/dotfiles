@@ -24,6 +24,7 @@ Plug 'Shougo/vimproc', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'sjl/gundo.vim'
 Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
