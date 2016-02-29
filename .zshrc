@@ -79,3 +79,7 @@ alias htop="TERM=screen-256color htop"
 alias ...="cd ../.."
 alias vimsplit="vim -O"
 alias esync="sudo eix-sync"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

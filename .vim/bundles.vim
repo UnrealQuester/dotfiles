@@ -7,6 +7,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
 Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'kana/vim-altr'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
