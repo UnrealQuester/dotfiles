@@ -95,6 +95,8 @@ colorscheme solarized
 hi Variable ctermfg=13
 hi Member ctermfg=45
 
+let g:load_doxygen_syntax=1
+
 " Font and encoding
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set guifontwide=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
@@ -143,7 +145,6 @@ if has("autocmd")
                     \   exe "normal! g`\"" |
                     \ endif
 
-        autocmd Filetype cpp set syntax=cpp.doxygen
         autocmd Filetype ruby,puppet,yaml,cabal setlocal ts=2 sts=2 sw=2
     augroup END
 endif
