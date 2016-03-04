@@ -4,6 +4,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chase/vim-ansible-yaml'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'Cofyc/vim-uncrustify'
 Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
 Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install' }

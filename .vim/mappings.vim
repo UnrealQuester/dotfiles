@@ -86,6 +86,12 @@ nnoremap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
 nnoremap <silent> <Leader>gs :Unite giti/status -no-start-insert<CR>
 
 autocmd FileType unite call s:unite_settings()
+
+autocmd FileType c noremap <buffer> <Leader>u :call Uncrustify('c')<CR>
+autocmd FileType c vnoremap <buffer> <Leader>u :call RangeUncrustify('c')<CR>
+autocmd FileType cpp noremap <buffer> <Leader>u :call Uncrustify('cpp')<CR>
+autocmd FileType cpp vnoremap <buffer> <Leader>u :call RangeUncrustify('cpp')<CR>
+
 function! s:unite_settings()
   " Enable navigation with Tab and Shift-Tab in insert mode
   imap <buffer> <Tab>   <Plug>(unite_select_next_line)
