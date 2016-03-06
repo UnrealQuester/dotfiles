@@ -79,6 +79,7 @@ let g:targets_separators = '. ; : + - = ~ _ * # / | \ & $'
 
 " unite
 nnoremap <silent> <Leader>ag :Unite -no-quit -keep-focus -no-start-insert -buffer-name=search grep:.<CR>
+nmap <Leader>aw <Leader>ag<C-R><C-W><CR>
 nnoremap <silent> <Leader>f :Unite -buffer-name=files file_rec/async<CR>
 nnoremap <silent> <Leader>tt :Unite -buffer-name=tag tag<CR>
 nnoremap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
