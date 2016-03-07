@@ -1,11 +1,14 @@
 #! /bin/bash
 
+cd ~/.config/bspwm
+. ./monitors
+
 compton --config ~/.compton.conf -b
 feh --bg-scale ~/wallpapers/wallpaper.png
 bspc config border_width 0
 bspc config window_gap 10
-bspc monitor DFP9  -d terminal files games
-bspc monitor DFP10 -d www mail misc
+bspc monitor $MONITOR_RIGHT -d terminal files games
+bspc monitor $MONITOR_LEFT -d www mail misc
 
 bspc desktop games -t state=floating
 bspc rule -a keepassx state=floating
@@ -23,7 +26,6 @@ bspc rule -a Steam desktop=games
 
 dunst -geometry "0x10-0+$PANEL_HEIGHT" &
 
-cd ~/.config/bspwm
 ./panel &
 redshift-gtk &
 

@@ -2,15 +2,16 @@
 
 PATH=$PATH:~/Projects/bar-widgets
 . ./panel_colors
+. ./monitors
 
 while read -r line ; do
     clock=`date "+%a %b %d %R"`
     active_win=`bspinfo -w -a`
     output=''
     for monitor in $1 ; do
-        if [ $monitor = "DFP9" ];then
+        if [ $monitor = "$MONITOR_RIGHT" ];then
             output="${output}%{l}%{S1}"
-        elif [ $monitor = "DFP10" ];then
+        elif [ $monitor = "$MONITOR_RIGHT" ];then
             output="${output}%{l}%{S0}"
         fi
         # check if current monitor is the active one

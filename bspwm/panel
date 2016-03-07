@@ -25,17 +25,18 @@ xtitle -sf 'T\n' > "$PANEL_FIFO" &
 dunst -geometry "0x10-0+$PANEL_HEIGHT" &
 
 . ./panel_colors
+. ./monitors
 
 trayer --edge top --align right --distance 7 --margin 10 --widthtype request --height $PANEL_HEIGHT --tint "$COLOR_BACKGROUND" --transparent true &
 
 cat "$PANEL_FIFO"                                                                       \
-| ./panel_bar DFP10                                                                     \
+| ./panel_bar $MONITOR_LEFT                                                                     \
 | lemonbar -g 1900x$PANEL_HEIGHT+10+7 -u 2 -f "$FONT_FAMILY" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" \
 | while read line; do eval "$line"; done &
 wait&
 
 cat "$PANEL_FIFO2"                                                                       \
-| ./panel_bar DFP9                                                                       \
+| ./panel_bar $MONITOR_RIGHT                                                                       \
 | lemonbar -g 1900x$PANEL_HEIGHT+1930+7 -u 2 -f "$FONT_FAMILY" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" \
 | while read line; do eval "$line"; done &
 
