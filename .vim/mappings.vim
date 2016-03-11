@@ -93,6 +93,9 @@ autocmd FileType c vnoremap <buffer> <Leader>u :call RangeUncrustify('c')<CR>
 autocmd FileType cpp noremap <buffer> <Leader>u :call Uncrustify('cpp')<CR>
 autocmd FileType cpp vnoremap <buffer> <Leader>u :call RangeUncrustify('cpp')<CR>
 
+autocmd FileType c noremap <buffer> <C-]> :YcmCompleter GoTo<CR>
+autocmd FileType cpp noremap <buffer> <C-]> :YcmCompleter GoTo<CR>
+
 function! s:unite_settings()
   " Enable navigation with Tab and Shift-Tab in insert mode
   imap <buffer> <Tab>   <Plug>(unite_select_next_line)
