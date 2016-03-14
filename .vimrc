@@ -96,6 +96,7 @@ hi Variable ctermfg=13
 hi Member ctermfg=45
 
 let g:load_doxygen_syntax=1
+let g:php_sql_query = 1
 
 " Font and encoding
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
