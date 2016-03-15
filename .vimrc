@@ -147,6 +147,7 @@ if has("autocmd")
                     \ endif
 
         autocmd Filetype ruby,puppet,yaml,cabal setlocal ts=2 sts=2 sw=2
+        autocmd Syntax php set syntax=on
     augroup END
 endif
 
