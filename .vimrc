@@ -94,6 +94,7 @@ set background=dark
 colorscheme solarized
 hi Variable ctermfg=13
 hi Member ctermfg=45
+hi Namespace ctermfg=9
 
 let g:load_doxygen_syntax=1
 let g:php_sql_query = 1
