@@ -107,6 +107,7 @@ function! s:unite_settings()
           nnoremap <silent><buffer><expr>gc unite#do_action('checkout')
           nnoremap <silent><buffer><expr>gd unite#do_action('diff')
           nnoremap <silent><buffer><expr>gu unite#do_action('unstage')
+          nnoremap <silent><buffer><expr>gr unite#do_action('reset')
       endif
   endfor
 endfunction
