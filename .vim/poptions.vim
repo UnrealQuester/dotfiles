@@ -23,12 +23,10 @@ call unite#custom#profile('default', 'context', {'start_insert':1})
 call unite#custom#profile('files', 'context', {'smartcase':1})
 call unite#custom#profile('search', 'context', {
             \    'start_insert':0,
-            \    'no_quit':1,
-            \    'keep_focus':1,
             \})
 if executable('ag')
     let g:unite_source_grep_command='ag'
-    let g:unite_source_grep_default_opts='--hidden --nocolor --line-numbers --nogroup --vimgrep -S'
+    let g:unite_source_grep_default_opts='--hidden --nocolor --line-numbers --nogroup -S'
     let g:unite_source_grep_recursive_opt=''
     let g:unite_source_rec_async_command= ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
     call unite#custom#source('grep', 'max_candidates', 1000)
