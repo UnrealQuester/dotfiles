@@ -36,6 +36,7 @@ let g:unite_source_tag_max_name_length = 70
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
+let g:syntastic_haskell_checkers=['ghc_mod', 'hlint']
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
