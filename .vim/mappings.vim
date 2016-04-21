@@ -3,6 +3,10 @@ let mapleader=" "
 " Toggle paste mode
 set pastetoggle=<F2>
 
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+            \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+            \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
 " Might be nice if I could actually remember this mapping
 inoremap jj <Esc>
 
