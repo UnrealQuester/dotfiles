@@ -62,9 +62,6 @@ nnoremap <CR> G
 " Hit Backspace to go to beginning of file.
 nnoremap <BS> gg
 
-" alias for surround
-nmap <Leader>s ys
-
 " surround alias
 nmap <Leader>s ys
 
