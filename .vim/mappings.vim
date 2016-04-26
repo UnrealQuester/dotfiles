@@ -23,6 +23,9 @@ vnoremap <Leader>y "+y
 noremap <Leader>p "+p
 vnoremap <Leader>p "+p
 
+" YCM FixIt
+nnoremap <Leader>uf :YcmCompleter FixIt<CR>
+
 " Fast window switching
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
