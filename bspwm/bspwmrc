@@ -12,6 +12,7 @@ bspc monitor $MONITOR_LEFT -d www mail misc
 
 bspc desktop games -t state=floating
 bspc rule -a keepassx state=floating
+bspc rule -a Keepassx state=floating
 bspc rule -a KeePass2 state=floating
 bspc rule -a Steam state=floating
 
