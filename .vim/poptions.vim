@@ -59,6 +59,7 @@ call tcomment#DefineType('cabal', '-- %s')
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tmuxline#enabled = 0
+let g:airline_section_error = ''
 
 " easytags
 let g:easytags_updatetime_warn = 0
