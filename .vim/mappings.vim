@@ -50,6 +50,10 @@ map g# <Plug>(incsearch-nohl-g#)
 
 nmap ]s <Plug>(altr-forward)
 nmap [s <Plug>(altr-back)
+
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
