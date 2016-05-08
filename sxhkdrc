@@ -48,5 +48,8 @@ super + r
 super + f
     bspc node -t "~fullscreen"
 
+super + d
+    bspc node -t "~floating"
+
 super + Print
     gnome-screenshot --interactive
