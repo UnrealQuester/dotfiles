@@ -25,6 +25,7 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'sjl/gundo.vim'
+Plug 'tmhedberg/matchit'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
