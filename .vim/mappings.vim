@@ -127,7 +127,7 @@ endfunction
 nnoremap <silent> <Leader>gd :Gdiff<CR>
 nnoremap <silent> <Leader>gc :Gcommit -v<CR>
 nnoremap <silent> <Leader>ga :Gcommit -v --amend<CR>
-nnoremap <silent> <Leader>gb :Gblame<CR>
+nnoremap <silent> <Leader>gb :Gblame -w<CR>
 
 nnoremap <silent> cp :set opfunc=ChangePaste<CR>g@
 function! ChangePaste(type, ...)
