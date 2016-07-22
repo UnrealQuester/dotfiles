@@ -93,7 +93,6 @@ nnoremap <silent> <Leader>ag :Unite -buffer-name=search grep:.<CR>
 nnoremap <silent> <Leader>aw :Unite -buffer-name=search grep:.:-w:<C-R><C-W><CR>
 nnoremap <silent> <Leader>ar :UniteResume search<CR>
 nnoremap <silent> <Leader>f :Unite -buffer-name=files file_rec/async<CR>
-nnoremap <silent> <Leader>tt :Unite -buffer-name=tag tag<CR>
 nnoremap <silent> <Leader>b :Unite -buffer-name=buffer buffer<CR>
 
 nnoremap <silent> <Leader>gs :Unite giti/status -no-start-insert<CR>
