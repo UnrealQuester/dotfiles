@@ -7,6 +7,7 @@ compton --config ~/.compton.conf -b
 feh --bg-scale ~/wallpapers/wallpaper.png
 bspc config border_width 0
 bspc config window_gap 10
+bspc config click_to_focus true
 bspc monitor $MONITOR_RIGHT -d terminal files games
 bspc monitor $MONITOR_LEFT -d www mail misc
 
@@ -21,6 +22,7 @@ bspc rule -a Firefox desktop=www
 bspc rule -a Iceweasel desktop=www
 bspc rule -a Google-chrome-stable desktop=www
 bspc rule -a google-chrome desktop=www
+bspc rule -a Google-chrome desktop=www
 bspc rule -a Thunderbird desktop=mail
 bspc rule -a Nemo desktop=files
 bspc rule -a Steam desktop=games

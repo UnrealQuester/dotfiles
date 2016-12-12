@@ -7,18 +7,16 @@ FONT_FAMILY="DejaVu Sans Mono For Powerline:14"
 
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 
-bspc config top_padding 30
-
 [ -e "$PANEL_FIFO"  ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 [ -e "$PANEL_FIFO2"  ] && rm "$PANEL_FIFO2"
 mkfifo "$PANEL_FIFO2"
 
-bspc control --subscribe > "$PANEL_FIFO2" &
+bspc subscribe report > "$PANEL_FIFO2" &
 while true; do echo 'S\n' > "$PANEL_FIFO2" ;sleep 20; done &
 xtitle -sf 'T\n' > "$PANEL_FIFO2" &
 
-bspc control --subscribe > "$PANEL_FIFO" &
+bspc subscribe report > "$PANEL_FIFO" &
 while true; do echo 'S\n' > "$PANEL_FIFO" ;sleep 20; done &
 xtitle -sf 'T\n' > "$PANEL_FIFO" &
 

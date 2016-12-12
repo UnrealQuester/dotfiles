@@ -1,13 +1,6 @@
 super + Return
     uxterm
 
-~button1
-    bspc pointer -g focus
-super + button{1-3}
-    bspc pointer -g {move,resize_side,resize_corner}
-super + @button{1-3}
-    bspc pointer -u
-
 super + shift + r
     pkill -USR1 -x sxhkd
 
@@ -17,9 +10,6 @@ super + c
 
 super + space
     dmenuwrapper
-
-super + ctrl + {1-9}
-    bspc node -r 0.{1-9}
 
 super + {_,shift + }{1,2,3}
     bspc {desktop -f,node -d} {terminal, files, games}
@@ -33,14 +23,14 @@ super + s
 super + shift + x
     bspc quit
 
-super + {_, shift +} Tab
-    bspc node -f {prev,next}
+super + {grave,Tab}
+    bspc {node,desktop} -f last
 
 super + {_,shift + }{h,j,k,l}
-    bspc node -{f,s} {left,down,up,right}
+    bspc node -{f,s} {west,south,north,east}
 
 super + ctrl + {h,j,k,l}
-    bspc node -p {left,down,up,right}
+    bspc node -p {west,south,north,east}
 
 super + r
     bspc desktop --rotate 90
