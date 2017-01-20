@@ -7,7 +7,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'Cofyc/vim-uncrustify'
 Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
-Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install' }
+Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install', 'for': ['c', 'cpp'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'kana/vim-altr'
