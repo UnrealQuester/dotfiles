@@ -5,6 +5,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'chase/vim-ansible-yaml'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Cofyc/vim-uncrustify'
+Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'haya14busa/incsearch.vim'
 Plug 'honza/vim-snippets'
 Plug 'jeaye/color_coded', { 'do': 'cmake . && make && make install', 'for': ['c', 'cpp'] }
