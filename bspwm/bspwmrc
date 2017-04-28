@@ -5,6 +5,8 @@ cd ~/.config/bspwm
 
 compton --config ~/.compton.conf -b
 feh --bg-scale ~/wallpapers/wallpaper.png
+sxhkd &
+xrdb -merge ~/.Xresources
 bspc config border_width 0
 bspc config window_gap 10
 bspc config click_to_focus true
