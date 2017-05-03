@@ -1,5 +1,7 @@
 #! /bin/bash
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 cd ~/.config/bspwm
 . ./monitors
 
@@ -40,4 +42,3 @@ uxterm tmux &
 google-chrome-stable &
 thunderbird &
 sleep 5 && nemo &> /dev/null &
-export _JAVA_AWT_WM_NONREPARENTING=1
