@@ -48,7 +48,6 @@ let g:ycm_max_diagnostics_to_display = 400
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
-let g:UltiSnipsUsePythonVersion = 2
 
 " Incsearch
 let g:incsearch#auto_nohlsearch = 1
