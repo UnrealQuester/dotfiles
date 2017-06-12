@@ -42,4 +42,4 @@ cd ~
 uxterm tmux &
 google-chrome-stable &
 thunderbird &
-sleep 5 && nemo &> /dev/null &
+nautilus &
