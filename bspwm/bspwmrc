@@ -29,6 +29,7 @@ bspc rule -a google-chrome desktop=www
 bspc rule -a Google-chrome desktop=www
 bspc rule -a Thunderbird desktop=mail
 bspc rule -a Nemo desktop=files
+bspc rule -a Nautilus desktop=files
 bspc rule -a Steam desktop=games
 
 dunst -geometry "0x10-0+$PANEL_HEIGHT" &
