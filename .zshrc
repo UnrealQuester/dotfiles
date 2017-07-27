@@ -71,7 +71,7 @@ alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc;
 alias ls="ls --color=auto"
 alias :q="exit"
 alias :e="vim"
-alias emerge="sudo emerge"
+alias emerge="sudo emerge -at"
 alias eselect="sudo eselect"
 alias irssi="TERM=screen-256color irssi"
 alias ranger="TERM=screen-256color ranger"
