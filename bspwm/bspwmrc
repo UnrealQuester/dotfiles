@@ -19,6 +19,7 @@ bspc desktop games -t state=floating
 bspc rule -a keepassx state=floating
 bspc rule -a Keepassx state=floating
 bspc rule -a KeePass2 state=floating
+bspc rule -a keepassxc state=floating
 bspc rule -a Steam state=floating
 
 bspc rule -a UXTerm desktop=terminal
