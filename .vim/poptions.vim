@@ -7,6 +7,10 @@ let g:haskell_indent_if = 0
 " latex
 let g:tex_conceal = ""
 
+" vim-json
+" fixes interaction with indentLine
+let g:vim_json_syntax_conceal = 0
+
 " auto pairs
 " let g:AutoPairsFlyMode = 1
 
