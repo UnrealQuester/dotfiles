@@ -38,10 +38,6 @@ endif
 let g:unite_source_tag_max_fname_length = 70
 let g:unite_source_tag_max_name_length = 70
 
-" Syntastic
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_haskell_checkers=['ghc_mod', 'hlint']
-
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_key_list_previous_completion = ['<S-Tab>']
@@ -76,6 +72,11 @@ let g:easytags_languages = {
         \ 'cmd' : 'jsctags'
     \ }
 \ }
+
+" ale
+let g:ale_linters = {
+\   'cpp': [],
+\}
 
 let g:hardtime_default_on = 1
 
