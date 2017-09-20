@@ -75,8 +75,14 @@ let g:easytags_languages = {
 
 " ale
 let g:ale_linters = {
-\   'cpp': [],
+\   'cpp': ['clangtidy'],
 \}
+
+let g:ale_fixers = {
+\   'cpp': ['clang-format'],
+\}
+let g:ale_cpp_clangtidy_checks = ['']
+let g:ale_cpp_clangtidy_options = '-x c++ -std=c++17 -I.'
 
 let g:hardtime_default_on = 1
 
