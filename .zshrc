@@ -67,7 +67,11 @@ bindkey '^[[Z' reverse-menu-complete
 # fix del key
 bindkey '\e[3~' delete-char
 
-alias latexmkspeciale="grep -l '\\documentclass' *tex | xargs latexmk -pdf -pvc;latexmk -c"
+function latexmkspeciale() {
+    latexmk -pdf -pvc "$1"
+    latexmk -c
+}
+
 alias ls="ls --color=auto"
 alias :q="exit"
 alias :e="vim"
